@@ -143,6 +143,28 @@ public class InventorySaver extends Extension {
         return false;
 	}
 
+    /**
+    *
+    * @return  {@code file} in wich the inventory data will be saved.
+    * @since 1.0.1
+    *
+    */
+	public File getFile() {
+		return file;
+	}
+
+    /**
+    *
+    * Changing the file in wich the inventory data will be saved. It is recomended to do it before the {@link #serialize serialize} method.
+    *
+    * @since 1.0.1
+    *
+    */
+	@SuppressWarnings("static-access")
+	public void setFile(File newFile) {
+		this.file = newFile;
+	}
+
 	/**
 	 * Just initialize method for Minestom Extension
 	 */
