@@ -4,7 +4,7 @@ InventorySaver is an Minestom Extension to save/load the inventory data of a pla
 ### Requirements
 - [x] [Minestom](https://github.com/Minestom/Minestom)
 
-### Usage
+### Usage [![](https://jitpack.io/v/JuniorInjects/InventorySaver.svg)](https://jitpack.io/#JuniorInjects/InventorySaver)
 When a player joins your server, you want to set his old inventory using the `#deserializ` method. If the player had no inventory data befor, you can set him some items.
 ```java
         MinecraftServer.getGlobalEventHandler().addListener(PlayerSpawnEvent.class, event -> {
